@@ -1,11 +1,62 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #eaeaea;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
 }
 
-h1 {
-  color: #ff5733;
+.title {
+  font-style: italic;
+  font-weight: bold;
   text-align: center;
-  margin-top: 50px;
-  font-size: 3em;
+  font-size: large;
+}
+
+.main-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-border .left-line, .main-border .right-line {
+  width: 37rem;
+  height: 2px;
+  background-color: black;
+  position: relative;
+}
+.main-border .left-line .right-vertical, .main-border .right-line .right-vertical {
+  position: absolute;
+  height: 3rem;
+  width: 1.5px;
+  top: 0px;
+  right: 0px;
+  background: black;
+}
+
+.main-section {
+  display: flex;
+}
+.main-section .left-card-main {
+  border-right: 2px solid rgb(221, 221, 221);
+  padding-right: 15px;
+}
+.main-section .left-card-main .left-top-card {
+  border-bottom: 2px solid rgb(221, 221, 221);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main-section .left-card-main .left-top-card h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  text-decoration: underline;
+  color: rgb(255, 76, 106);
+  margin: 10px 0 11px 0;
+}
+.main-section .left-card-main .left-top-card p {
+  font-size: large;
+  max-width: 250px;
+  line-height: 25px;
+  margin: 0;
+}
+.main-section .left-card-main .left-top-card .author {
+  font-size: small;
+  font-weight: 700;
+  color: gray;
 }
