@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
-
 // Define the 'styles' task
 gulp.task('styles', function() {
   return gulp.src('src/sass/*.scss') // Source folder containing Sass files
@@ -14,5 +13,8 @@ gulp.task('watch', function() {
   gulp.watch('src/sass/*.scss', gulp.series('styles'));
 });
 
+// Define the 'build' task
+gulp.task('build', gulp.series('styles'));
+
 // Define the default task
-gulp.task('default', gulp.series('styles', 'watch'));
+gulp.task('default', gulp.series('build', 'watch'));
