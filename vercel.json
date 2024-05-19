@@ -2,15 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "gulpfile.js",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "dist" }
+        "src": "package.json",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/dist/index.html"
+        "dest": "dist/$1"
       }
     ]
   }
