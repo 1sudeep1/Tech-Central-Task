@@ -3,6 +3,11 @@ body {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .title {
   font-style: italic;
   font-weight: bold;
@@ -15,13 +20,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main-border .left-line, .main-border .right-line {
+.main-border .left-line,
+.main-border .right-line {
   width: 37rem;
   height: 2px;
   background-color: black;
   position: relative;
 }
-.main-border .left-line .right-vertical, .main-border .right-line .right-vertical {
+.main-border .left-line .right-vertical,
+.main-border .right-line .right-vertical {
   position: absolute;
   height: 3rem;
   width: 1.5px;
@@ -32,22 +39,28 @@ body {
 
 .main-section {
   display: flex;
+  justify-content: space-around;
 }
-.main-section .left-card-main {
-  border-right: 2px solid rgb(221, 221, 221);
-  padding-right: 15px;
-}
-.main-section .left-card-main .left-top-card {
-  border-bottom: 2px solid rgb(221, 221, 221);
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.main-section .left-card-main .left-top-card h5 {
+.main-section .category {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   text-decoration: underline;
   color: rgb(255, 76, 106);
   margin: 10px 0 11px 0;
+}
+.main-section .author {
+  font-size: small;
+  font-weight: 700;
+  color: gray;
+}
+.main-section .left-card-main {
+  border-right: 2px solid rgb(221, 221, 221);
+  padding-right: 20px;
+}
+.main-section .left-card-main .left-top-card {
+  border-bottom: 2px solid rgb(221, 221, 221);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .main-section .left-card-main .left-top-card p {
   font-size: large;
@@ -55,8 +68,65 @@ body {
   line-height: 25px;
   margin: 0;
 }
-.main-section .left-card-main .left-top-card .author {
-  font-size: small;
-  font-weight: 700;
-  color: gray;
+.main-section .center-card-main {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section .center-card-main .center-img {
+  width: 94%;
+}
+.main-section .center-card-main p {
+  max-width: 90%;
+  font-size: xx-large;
+  line-height: 25px;
+  margin: 0;
+  text-align: center;
+  line-height: normal;
+}
+.main-section .center-card-main :nth-child(4) {
+  font-size: large;
+  margin: 10px 0;
+}
+.main-section .right-section {
+  border-left: 2px solid rgb(221, 221, 221);
+  padding-left: 20px;
+}
+.main-section .right-section .right-card-main {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(221, 221, 221);
+  padding-bottom: 15px;
+  gap: 20px;
+}
+.main-section .right-section .right-card-main .right-card-left-section {
+  max-width: 60%;
+}
+.main-section .right-section .right-card-main .right-card-left-section p {
+  font-size: large;
+  line-height: 25px;
+  margin: 0;
+}
+.main-section .right-section .form-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.main-section .right-section .form-item input {
+  padding: 8px;
+  font-weight: bold;
+  font-size: normal;
+}
+.main-section .right-section .form-item button {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: normal;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 5%;
+}
+.main-section .right-section .privacy {
+  font-weight: bold;
 }
