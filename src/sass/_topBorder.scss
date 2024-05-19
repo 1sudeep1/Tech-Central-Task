@@ -1,0 +1,22 @@
+.main-border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-line,
+    .right-line {
+        width: 37rem;
+        height: 2px;
+        background-color: black;
+        position: relative;
+
+        .right-vertical {
+            position: absolute;
+            height: 3rem;
+            width: 1.5px;
+            top: 0px;
+            right: 0px;
+            background: black;
+        }
+    }
+}
